@@ -1,7 +1,7 @@
 # Sample-Game-Site-DieFames
 
 ## Preview:
-[https://ketankarki.github.io/eBird-Site-Clone/index.html](https://ketankarki.github.io/eBird-Site-Clone/index.html)
+[https://ketankarki.github.io/Sample-Game-Site-DieFames/](https://ketankarki.github.io/Sample-Game-Site-DieFames/)
 
 This is a sample games website DieFames made using HTML and CSS only.
 

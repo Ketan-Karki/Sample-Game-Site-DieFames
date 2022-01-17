@@ -1,0 +1,257 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: url(assets/bgChallenge.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo
+{
+    float: left;
+    color: rgb(39, 10, 46);
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(229, 102, 233);
+}
+
+.logo:hover
+{
+    color: rgb(254, 250, 255);
+}
+nav
+{
+    float: right;
+    position: absolute;
+    right: 6%;
+}
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li
+{
+    display: inline-flex;
+    position: relative;
+    margin-left: 65px;
+    padding-top: 25px;
+    font-weight: bolder;
+}
+
+nav a
+{
+    color: rgb(48, 44, 51);
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    padding: 16px 0 5px;
+    margin: 0 25px;
+}
+
+nav a:hover
+{
+    color: rgb(0, 0, 0);
+    transition: 0.9s;
+}
+
+nav a::before
+{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgb(34, 13, 39);
+    position: absolute; 
+    bottom: 0;
+    width: 0;
+    transition: all ease-in-out 350ms;
+}
+
+nav a:hover::before
+{
+    width: 100%;
+}
+
+main
+{
+    width: 95%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 200px 630px 80px ;
+    grid-template-columns: repeat(3,1fr) 200px;
+    grid-gap: 20px;
+}
+
+.box1
+{
+    background: url(assets/fastCar.png);
+    background-size: cover;
+    background-position: center;
+    transition: 0.9s;
+}
+
+.box1:hover
+{
+    transform: scale(1.3);
+}
+
+.box2
+{
+    background: url(assets/dynasty.jpg);
+    background-size: cover;
+    transition: 0.9s;
+}
+
+.box2:hover
+{
+    transform: scale(1.3);
+}
+
+.box3
+{
+    background: url(assets/HumanSim.png);
+    background-size: cover;
+    transition: 0.9s;
+}
+
+.box3:hover
+{
+    transform: scale(1.3);
+}
+
+.side
+{
+    background-color: #180c1f;
+    grid-row: 1/3;
+    grid-column: 4/5;
+}
+.cont
+{
+    
+    background:linear-gradient(to bottom,rgba(26, 11, 39,0.8),rgba(132, 68, 185, 0.6))  ;
+    grid-column: 1/4;
+    /* background: url(assets/gta.jpg); */
+    background-size: cover;
+    color: rgb(255, 254, 254);
+    font-size: 25px;
+    text-align: left;
+    float: left;
+    padding: 30px 350px 40px 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+.footer
+{
+    background-color: #2b2626;
+    grid-column: 1/-1;
+    color: rgb(172, 172, 165);
+    position: relative;
+}
+
+#quote
+{
+    color: rgb(255, 255, 255);
+}
+
+#esrb
+{
+    width: 120px;
+}
+
+#icon
+{
+    width: 80px;
+    float: right;
+}
+
+#last
+{
+    position: absolute;
+    top: 10px;
+    left: 550px;
+    font-size: 23px;
+
+}
+
+#follow
+{
+    position: absolute;
+    bottom: 10px;
+    left: 1000px;
+    font-size: 18px;
+}
+
+#insta
+{
+    width: 28px;
+    position: absolute;
+    right: 300px;
+    bottom: 10px;
+}
+
+#twit
+{
+    width: 30px;
+    position: absolute;
+    right: 250px;
+    bottom: 10px;
+}
+
+#fb
+{
+    width: 40px;
+    position: absolute;
+    right: 200px;
+    top: 37px;
+}
+
+#snap
+{
+    width: 29px;
+    position: absolute;
+    right: 160px;
+    bottom: 10px;
+}
+
+.sidebar
+{
+    list-style-type: none;
+    position: absolute;
+    padding: 20px;
+}
+
+.sidebar li
+{
+    padding: 10px;
+    margin: 0 0 45px 0;
+    color: rgb(156, 156, 154);
+    text-align: center;
+    transition: all 200ms ease-in-out;
+}
+
+.sidebar li:hover
+{
+    border: 2px solid rgb(175, 175, 171);
+    color: rgb(243, 235, 224);
+}
